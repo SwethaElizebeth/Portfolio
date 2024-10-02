@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: gainsboro;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #BA68C8;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 2rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        nav ul li a:hover {
+            opacity: 0.8;
+        }
+
+        /* Main Content Styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .about-section {
+            display: flex;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .profile-image {
+            flex: 1;
+            max-width: 300px;
+        }
+
+        .profile-image img {
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .about-content {
+            flex: 2;
+        }
+
+        h2 {
+            color: #BA68C8;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .about-text {
+            margin-bottom: 2rem;
+        }
+
+        /* Personal Information Styles */
+        .personal-info h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .info-item {
+            margin-bottom: 1rem;
+        }
+
+        .info-item strong {
+            color: #666;
+            margin-right: 0.5rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                padding: 1rem;
+            }
+
+            nav ul {
+                margin-top: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            nav ul li {
+                margin: 0.5rem;
+            }
+
+            .about-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .profile-image {
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">SWETHA ELIZEBETH PREM</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT ME</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="signup.html">SIGNUP</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="about-section">
+            <div class="profile-image">
+                <img src="imgswetha.jpeg" alt="Akhil Shaji">
+            </div>
+            <div class="about-content">
+                <h2>ABOUT ME</h2>
+                <div class="about-text">
+                    <p>A 4th year Computer Science Engineering student and at SJCET Palai.</p>
+                    <p> I have experience in programming languages like Python, C and Java, along with web development skills in HTML, CSS, and JavaScript.</p>
+                    <p> My goal is to further develop my skills and contribute to innovative software or web development projects in the future.</p>
+
+                </div>
+
+                <div class="personal-info">
+                    <h2>PERSONAL INFORMATION</h2>
+                    <div class="info-item">
+                        <strong>Name :</strong> Swetha Elizebeth Prem
+                    </div>
+                    <div class="info-item">
+                        <strong>Age :</strong> 21 
+                    </div>
+                    <div class="info-item">
+                        <strong>Phone :</strong> 8848051588
+                    </div>
+                    <div class="info-item">
+                        <strong>Email :</strong> swethaelizebeth@gmail.com
+                    </div>
+                    <div class="info-item">
+                        <strong>Address :</strong> Calicut, Kerala, India
+                    </div>
+                    <div class="info-item">
+                        <strong>Education :</strong><br/>
+                        <li>B.Tech:SJCET,Palai 2021-2025</li>
+                        <li>Higher Secondary:B.E.M GHSS,Calicut 2019-2021</li>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
